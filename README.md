@@ -49,24 +49,39 @@ This code will definitively help you understand the underlying
 concept of types classes and how to use it.
 
 
+## Concurrency: Future and Promise
+
+[Concurrency.scala](src/main/scala/Concurrency.scala) shows how
+to use a [Future](https://www.scala-lang.org/api/current/scala/concurrent/Future.html)
+and how it execute code asynchronously. It also shows
+the principle of a [Promise](https://www.scala-lang.org/api/current/scala/concurrent/Promise.html)
+
+
 ## Optional
 
 Scala does not have the concept of `null`. Instead, when you do not have a value, you 
 return the singleton value `None`. At first, it does not seem very useful but this is a very powerful
 programming concept.
 
-The [OptionUsage.scala](src/main/scala/OptionUsage.scala) shows how to use the 
+[OptionUsage.scala](src/main/scala/OptionUsage.scala) shows how to use the 
 [Option](https://www.scala-lang.org/api/current/scala/Option.html) class.
 
 ## Exception Handling
 
-The [ExceptionManagement.scala](src/main/scala/ExceptionManagement.scala) file contains a good example
+[ExceptionManagement.scala](src/main/scala/ExceptionManagement.scala) contains a good example
 to handle exception in your code. It defines a function that can return an exception and
 how to filter/print the exception.
 
 ## Implicit value
 
-The [ImplicitValUsage](src/main/scala/ImplicitValUsage.scala) is an example
+[ImplicitValUsage.scala](src/main/scala/ImplicitValUsage.scala) is an example
 to declare implicit val and how to declare functions that uses implicit value.
 The main implicit you are going to meet in many codebase is the `ExecutionContext`
 that is defined in `scala.concurrent.ExecutionContext.Implicits.global`.
+
+## Implicit Conversion
+
+[ImplicitConversion.scala](src/main/scala/ImplicitConversion.scala) is an example
+to declare implicit function that is used to implicitly convert from one type to another.
+In that example, we convert from an `Int` to a `Metric`.
+
