@@ -1,4 +1,4 @@
-# scala-cookbook
+# Scala Cookbook and other advices for beginners
 
 This repository has some recipes and other code to reuse when starting with Scala.
 It is *NOT* an authoritative resource about how to write good code in Scala: it is
