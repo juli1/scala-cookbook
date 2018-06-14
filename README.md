@@ -85,3 +85,7 @@ that is defined in `scala.concurrent.ExecutionContext.Implicits.global`.
 to declare implicit function that is used to implicitly convert from one type to another.
 In that example, we convert from an `Int` to a `Metric`.
 
+## Stream
+[StreamUsage.scala](src/main/scala/StreamUsage.scala) shows how
+to use [Stream](https://www.scala-lang.org/api/current/scala/collection/immutable/Stream.html)
+with a function or a lazy val.
