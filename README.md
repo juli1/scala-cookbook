@@ -45,6 +45,8 @@ The [TypeClasses.scala](src/main/scala/TypesClasses.scala) file contains usage f
 You can find more information on 
 [Daniel Westheide blog post](https://danielwestheide.com/blog/2013/02/06/the-neophytes-guide-to-scala-part-12-type-classes.html).
 
+Another [great resource for type classes](https://www.theguardian.com/info/developer-blog/2016/dec/22/parental-advisory-implicit-content)
+
 This code will definitively help you understand the underlying
 concept of types classes and how to use it.
 

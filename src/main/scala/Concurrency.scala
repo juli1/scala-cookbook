@@ -4,6 +4,13 @@ import scala.concurrent.{Await, Future, Promise}
 import scala.concurrent.ExecutionContext.Implicits.global
 
 object Concurrency extends App{
+
+  /**
+    * just a helper function to find a prime number.
+    * We just check that there is no number that can divide
+    * our parameter between 2 and our square root (sqrt)
+    * @param number
+    */
   class IntForPrime(val number: Int) {
     def isPrime: Boolean = {
       number match {
@@ -15,8 +22,12 @@ object Concurrency extends App{
     }
   }
 
+  // implicit conversion so that we can convert an Int to an IntForPrime
+  // and directly use 12.isPrime or 1.isPrime
   implicit def IntToIntForPrime(i: Int) = new IntForPrime(i)
 
+  // This function compute asynchronously, in a separate thread
+  // a random Prime Number.
   def findRandomPrimeNumber: Future[Int] = {
     // we promise we will find this value!
     val primeFound = Promise[Int]

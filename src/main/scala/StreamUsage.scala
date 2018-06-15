@@ -14,5 +14,14 @@ object StreamUsage extends App{
 
     // We are going to take numbers until we find 100
     randomNumbers.takeWhile(number => number != 100).foreach(println(_))
+
+    println("with lazy val")
+
+    // Here we need to put the value as lazy, otherwise, it would be computed/resolved
+    // when we declare it and we want to resolve it when we use it.
+    lazy val randomNumbersLazy: Stream[Int] = 1 #:: randomNumbersLazy.map(n => nextInt(1000))
+    randomNumbersLazy.takeWhile(number => number != 100).foreach(println(_))
+
+    println("done")
   }
 }
