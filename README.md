@@ -41,7 +41,7 @@ Scala class. It shows how `for` loops are translated into filter/map calls.
 
 ## Types Classes
 
-The [TypeClasses.scala](src/main/scala/TypesClasses.scala) file contains usage for Types Classes.
+The [TypeClasses.scala](src/main/scala/TypeClasses.scala) file contains usage for Types Classes.
 You can find more information on 
 [Daniel Westheide blog post](https://danielwestheide.com/blog/2013/02/06/the-neophytes-guide-to-scala-part-12-type-classes.html).
 
