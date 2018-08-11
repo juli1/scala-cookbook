@@ -15,6 +15,16 @@ object ByNameParameter extends App{
     result
   }
 
+  /*
+   * it is also possible to define some operator like the if/while/etc
+   */
+  def customIfOrElse[A](condition: Boolean, default: A)(code: => A) = {
+    condition match {
+      case true => code
+      case _ => default
+    }
+  }
+
   override def main(args: Array[String]): Unit = {
     def bla(): Int = {
       return 3
@@ -34,5 +44,8 @@ object ByNameParameter extends App{
     timeit(bla())
     timeit(multiplyElementsBy2(List(2,3,4)))
     timeit({Thread.sleep(3000)})
+
+    customIfOrElse(true, 42){ return 51}
+    customIfOrElse(false, 42){ return 51}
   }
 }
