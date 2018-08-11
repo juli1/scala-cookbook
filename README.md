@@ -90,4 +90,21 @@ In that example, we convert from an `Int` to a `Metric`.
 ## Stream
 [StreamUsage.scala](src/main/scala/StreamUsage.scala) shows how
 to use [Stream](https://www.scala-lang.org/api/current/scala/collection/immutable/Stream.html)
-with a function or a lazy val.
+with a function or a lazy val. 
+
+## Tail recursion
+[TailRec.scala](src/main/scala/TailRec.scala) shows you 
+how to use the `@tailrec` annotation to make sure a function
+is tail recursive and does not kill your stack.
+
+## Partial Functions
+[PartialFunctions.scala](src/main/scala/PartialFunctions.scala) 
+gives an example of partial functions. Partial functions
+are used where only some arguments are used/defined and that 
+become functions themselves. If this is not clear enough, read the code!
+
+## By name parameters
+[ByNameParameter.scala](src/main/scala/ByNameParameter.scala) 
+shows how to define a by name parameter, where we only declare
+a block of code that returns *something*. Amazing description
+on the [tpolecat blog](https://tpolecat.github.io/2014/06/26/call-by-name.html).
