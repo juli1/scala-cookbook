@@ -9,9 +9,11 @@ package cats
 import PrintableInstances._
 import cats.PrintableSyntax.PrintableOps
 
-final case class Cat(name: String, age: Int, color: String)
 
 object PrintableUsage extends App {
+
+  final case class Cat(name: String, age: Int, color: String)
+
   val i = 3
   val s = "hello world"
   println("format="+Printable.format(i))
