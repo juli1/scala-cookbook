@@ -108,3 +108,16 @@ become functions themselves. If this is not clear enough, read the code!
 shows how to define a by name parameter, where we only declare
 a block of code that returns *something*. Amazing description
 on the [tpolecat blog](https://tpolecat.github.io/2014/06/26/call-by-name.html).
+
+## Cats library
+The directory [cats](src/main/scala/cats) contains the solutions
+for the book [Scala with cats](https://underscore.io/books/scala-with-cats/).
+
+These are good examples to use the [cats](https://typelevel.org/cats)
+library that enables more functional programming patterns with Scala. 
+
+It shows:
+ * Type classes basics (section 1.3)
+ * How to use `Show[A]` with Cats  (section 1.4)
+ * How to use `Eq[A]` (section 1.5)
+ * What are Monoid (section 2.3 and 2.4)

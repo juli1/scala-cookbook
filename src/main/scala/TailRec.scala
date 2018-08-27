@@ -9,6 +9,11 @@ import scala.annotation.tailrec
 object TailRec extends App{
 
 
+  /*
+   * sumList is just the function to begin with. It then
+   * calls sumListRec which is annotated with @tailrec
+   * and totally tail recursive.
+   */
   def sumList(list: List[Int]): Int = {
     @tailrec
     def sumListRec(l : List[Int], accumulator: Int): Int = {
